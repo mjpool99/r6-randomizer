@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "R6S";
+  src: url("../public/assets/Ghost-Clan.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background-image: url("../public/assets/background.jpg");
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  padding-top: 60px;
+  font-size: 0;
+  line-height: 0;
+  overflow: visible;
+}
+
+.card {
+  font-family: "R6S";
+  opacity: 0.5;
+  margin: 5px;
+  width: calc(12.5% - 10px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #24262a;
+  background-color: hsla(0, 0%, 100%, 0.15);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  background-color: #2499ff;
+  cursor: pointer;
+}
+.card span {
+  text-align: center;
+  background-color: #c3c3c3;
+  width: 100%;
+  display: block;
+  padding: 13px 0;
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+
+.card .op-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.card .op-icon {
+  display: block;
+  position: absolute;
+  top: 55%;
+  right: auto;
+  left: 50%;
+  bottom: auto;
+  margin: 0 -25%;
+  width: 50%;
+  height: auto;
+}
+.card.active {
+  opacity: 1;
+}
+
+input[type="checkbox"] {
+  /* remove browser chrome */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  /*add styling */
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #455a64;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+input[type="checkbox"]:checked {
+  background-color: white;
+}
+input[type="checkbox"]::before {
+  content: "";
+  color: #fff;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  left: 4px;
+  background-color: transparent;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  /* base64 encoded to make things easier to show 
+  	normally you would use an image or a font
+  */
+  background-image: url("data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjQ0OCIgaGVpZ2h0PSI0NDgiIHZpZXdCb3g9IjAgMCA0NDggNDQ4Ij4KPHRpdGxlPjwvdGl0bGU+CjxnIGlkPSJpY29tb29uLWlnbm9yZSI+CjwvZz4KPHBhdGggZD0iTTQxNy43NSAxNDEuNWMwIDYuMjUtMi41IDEyLjUtNyAxN2wtMjE1IDIxNWMtNC41IDQuNS0xMC43NSA3LTE3IDdzLTEyLjUtMi41LTE3LTdsLTEyNC41LTEyNC41Yy00LjUtNC41LTctMTAuNzUtNy0xN3MyLjUtMTIuNSA3LTE3bDM0LTM0YzQuNS00LjUgMTAuNzUtNyAxNy03czEyLjUgMi41IDE3IDdsNzMuNSA3My43NSAxNjQtMTY0LjI1YzQuNS00LjUgMTAuNzUtNyAxNy03czEyLjUgMi41IDE3IDdsMzQgMzRjNC41IDQuNSA3IDEwLjc1IDcgMTd6Ij48L3BhdGg+Cjwvc3ZnPgo=");
+}
+
+input[type="checkbox"]:checked::before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
