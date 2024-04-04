@@ -1,0 +1,361 @@
+{
+  "attackers": [
+    {
+      "name": "Ace",
+      "image": "images/ace.jpg",
+      "icon": "icons/ace-icon.jpg"
+    },
+    {
+      "name": "Amaru",
+      "image": "images/amaru.jpg",
+      "icon": "icons/amaru-icon.jpg"
+    },
+    {
+      "name": "Ash",
+      "image": "images/ash.jpg",
+      "icon": "icons/ash-icon.jpg"
+    },
+    {
+      "name": "Blackbeard",
+      "image": "images/blackbeard.jpg",
+      "icon": "icons/blackbeard-icon.jpg"
+    },
+    {
+      "name": "Blitz",
+      "image": "images/blitz.jpg",
+      "icon": "icons/blitz-icon.jpg"
+    },
+    {
+      "name": "Brava",
+      "image": "images/brava.jpg",
+      "icon": "icons/brava-icon.jpg"
+    },
+    {
+      "name": "Buck",
+      "image": "images/buck.jpg",
+      "icon": "icons/buck-icon.jpg"
+    },
+    {
+      "name": "Capitão",
+      "image": "images/capitao.jpg",
+      "icon": "icons/capitao-icon.jpg"
+    },
+    {
+      "name": "Deimos",
+      "image": "images/deimos.jpg",
+      "icon": "icons/deimos-icon.jpg"
+    },
+    {
+      "name": "Dokkaebi",
+      "image": "images/dokkaebi.jpg",
+      "icon": "icons/dokkaebi-icon.jpg"
+    },
+    {
+      "name": "Finka",
+      "image": "images/finka.jpg",
+      "icon": "icons/finka-icon.jpg"
+    },
+    {
+      "name": "Flores",
+      "image": "images/flores.jpg",
+      "icon": "icons/flores-icon.jpg"
+    },
+    {
+      "name": "Fuze",
+      "image": "images/fuze.jpg",
+      "icon": "icons/fuze-icon.jpg"
+    },
+    {
+      "name": "Glaz",
+      "image": "images/glaz.jpg",
+      "icon": "icons/glaz-icon.jpg"
+    },
+    {
+      "name": "Gridlock",
+      "image": "images/gridlock.jpg",
+      "icon": "icons/gridlock-icon.jpg"
+    },
+    {
+      "name": "Grim",
+      "image": "images/grim.jpg",
+      "icon": "icons/grim-icon.jpg"
+    },
+    {
+      "name": "Hibana",
+      "image": "images/hibana.jpg",
+      "icon": "icons/hibana-icon.jpg"
+    },
+    {
+      "name": "Iana",
+      "image": "images/iana.jpg",
+      "icon": "icons/iana-icon.jpg"
+    },
+    {
+      "name": "IQ",
+      "image": "images/iq.jpg",
+      "icon": "icons/iq-icon.jpg"
+    },
+    {
+      "name": "Jackal",
+      "image": "images/jackal.jpg",
+      "icon": "icons/jackal-icon.jpg"
+    },
+    {
+      "name": "Kali",
+      "image": "images/kali.jpg",
+      "icon": "icons/kali-icon.jpg"
+    },
+    {
+      "name": "Lion",
+      "image": "images/lion.jpg",
+      "icon": "icons/lion-icon.jpg"
+    },
+    {
+      "name": "Maverick",
+      "image": "images/maverick.jpg",
+      "icon": "icons/maverick-icon.jpg"
+    },
+    {
+      "name": "Montagne",
+      "image": "images/montagne.jpg",
+      "icon": "icons/montagne-icon.jpg"
+    },
+    {
+      "name": "Nomad",
+      "image": "images/nomad.jpg",
+      "icon": "icons/nomad-icon.jpg"
+    },
+    {
+      "name": "Nøkk",
+      "image": "images/nokk.jpg",
+      "icon": "icons/nokk-icon.jpg"
+    },
+    {
+      "name": "Osa",
+      "image": "images/osa.jpg",
+      "icon": "icons/osa-icon.jpg"
+    },
+    {
+      "name": "Ram",
+      "image": "images/ram.jpg",
+      "icon": "icons/ram-icon.jpg"
+    },
+    {
+      "name": "Sens",
+      "image": "images/sens.jpg",
+      "icon": "icons/sens-icon.jpg"
+    },
+    {
+      "name": "Sledge",
+      "image": "images/sledge.jpg",
+      "icon": "icons/sledge-icon.jpg"
+    },
+    {
+      "name": "Thatcher",
+      "image": "images/thatcher.jpg",
+      "icon": "icons/thatcher-icon.jpg"
+    },
+    {
+      "name": "Thermite",
+      "image": "images/thermite.jpg",
+      "icon": "icons/thermite-icon.jpg"
+    },
+    {
+      "name": "Twitch",
+      "image": "images/twitch.jpg",
+      "icon": "icons/twitch-icon.jpg"
+    },
+    {
+      "name": "Ying",
+      "image": "images/ying.jpg",
+      "icon": "icons/ying-icon.jpg"
+    },
+    {
+      "name": "Zofia",
+      "image": "images/zofia.jpg",
+      "icon": "icons/zofia-icon.jpg"
+    },
+    {
+      "name": "Zero",
+      "image": "images/zero.jpg",
+      "icon": "icons/zero-icon.jpg"
+    }
+  ],
+  "defenders": [
+    {
+      "name": "Alibi",
+      "image": "images/alibi.jpg",
+      "icon": "icons/alibi-icon.jpg"
+    },
+    {
+      "name": "Aruni",
+      "image": "images/aruni.jpg",
+      "icon": "icons/aruni-icon.jpg"
+    },
+    {
+      "name": "Azami",
+      "image": "images/azami.jpg",
+      "icon": "icons/azami-icon.jpg"
+    },
+    {
+      "name": "Bandit",
+      "image": "images/bandit.jpg",
+      "icon": "icons/bandit-icon.jpg"
+    },
+    {
+      "name": "Castle",
+      "image": "images/castle.jpg",
+      "icon": "icons/castle-icon.jpg"
+    },
+    {
+      "name": "Caveira",
+      "image": "images/caveira.jpg",
+      "icon": "icons/caveira-icon.jpg"
+    },
+    {
+      "name": "Clash",
+      "image": "images/clash.jpg",
+      "icon": "icons/clash-icon.jpg"
+    },
+    {
+      "name": "Doc",
+      "image": "images/doc.jpg",
+      "icon": "icons/doc-icon.jpg"
+    },
+    {
+      "name": "Echo",
+      "image": "images/echo.jpg",
+      "icon": "icons/echo-icon.jpg"
+    },
+    {
+      "name": "Ela",
+      "image": "images/ela.jpg",
+      "icon": "icons/ela-icon.jpg"
+    },
+    {
+      "name": "Fenrir",
+      "image": "images/fenrir.jpg",
+      "icon": "icons/fenrir-icon.jpg"
+    },
+    {
+      "name": "Frost",
+      "image": "images/frost.jpg",
+      "icon": "icons/frost-icon.jpg"
+    },
+    {
+      "name": "Goyo",
+      "image": "images/goyo.jpg",
+      "icon": "icons/goyo-icon.jpg"
+    },
+    {
+      "name": "Jäger",
+      "image": "images/jäger.jpg",
+      "icon": "icons/jäger-icon.jpg"
+    },
+    {
+      "name": "Kapkan",
+      "image": "images/kapkan.jpg",
+      "icon": "icons/kapkan-icon.jpg"
+    },
+    {
+      "name": "Kaid",
+      "image": "images/kaid.jpg",
+      "icon": "icons/kaid-icon.jpg"
+    },
+    {
+      "name": "Lesion",
+      "image": "images/lesion.jpg",
+      "icon": "icons/lesion-icon.jpg"
+    },
+    {
+      "name": "Maestro",
+      "image": "images/maestro.jpg",
+      "icon": "icons/maestro-icon.jpg"
+    },
+    {
+      "name": "Melusi",
+      "image": "images/melusi.jpg",
+      "icon": "icons/melusi-icon.jpg"
+    },
+    {
+      "name": "Mira",
+      "image": "images/mira.jpg",
+      "icon": "icons/mira-icon.jpg"
+    },
+    {
+      "name": "Mozzie",
+      "image": "images/mozzie.jpg",
+      "icon": "icons/mozzie-icon.jpg"
+    },
+    {
+      "name": "Mute",
+      "image": "images/mute.jpg",
+      "icon": "icons/mute-icon.jpg"
+    },
+    {
+      "name": "Oryx",
+      "image": "images/oryx.jpg",
+      "icon": "icons/oryx-icon.jpg"
+    },
+    {
+      "name": "Pulse",
+      "image": "images/pulse.jpg",
+      "icon": "icons/pulse-icon.jpg"
+    },
+    {
+      "name": "Rook",
+      "image": "images/rook.jpg",
+      "icon": "icons/rook-icon.jpg"
+    },
+    {
+      "name": "Smoke",
+      "image": "images/smoke.jpg",
+      "icon": "icons/smoke-icon.jpg"
+    },
+    {
+      "name": "Solis",
+      "image": "images/solis.jpg",
+      "icon": "icons/solis-icon.jpg"
+    },
+    {
+      "name": "Tachanka",
+      "image": "images/tachanka.jpg",
+      "icon": "icons/tachanka-icon.jpg"
+    },
+    {
+      "name": "Thorn",
+      "image": "images/thorn.jpg",
+      "icon": "icons/thorn-icon.jpg"
+    },
+    {
+      "name": "Thunderbird",
+      "image": "images/thunderbird.jpg",
+      "icon": "icons/thunderbird-icon.jpg"
+    },
+    {
+      "name": "Tubarão",
+      "image": "images/tubarão.jpg",
+      "icon": "icons/tubarão-icon.jpg"
+    },
+    {
+      "name": "Valkyrie",
+      "image": "images/valkyrie.jpg",
+      "icon": "icons/valkyrie-icon.jpg"
+    },
+    {
+      "name": "Vigil",
+      "image": "images/vigil.jpg",
+      "icon": "icons/vigil-icon.jpg"
+    },
+    {
+      "name": "Wamai",
+      "image": "images/wamai.jpg",
+      "icon": "icons/wamai-icon.jpg"
+    },
+    {
+      "name": "Warden",
+      "image": "images/warden.jpg",
+      "icon": "icons/warden-icon.jpg"
+    }
+  ]
+}
