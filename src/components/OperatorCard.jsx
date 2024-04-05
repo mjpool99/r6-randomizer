@@ -9,7 +9,7 @@ export default function OperatorCard(props) {
 
   return (
     <div className={`card ${data.active ? 'active' : ''}`} onClick={() => {
-        if (op == "Attack")
+        if (op === "Attack")
             updateAttacker(data.id);
         else
             updateDefender(data.id);

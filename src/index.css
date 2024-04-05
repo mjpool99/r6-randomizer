@@ -1,6 +1,6 @@
 @font-face {
   font-family: "R6S";
-  src: url("../public/assets/Ghost-Clan.ttf");
+  src: url("../public/assets/R6S.woff2");
 }
 
 body {
@@ -8,33 +8,90 @@ body {
   background-image: url("../public/assets/background.jpg");
 }
 
-.card-container {
+.row {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 -5px;
-  padding-top: 60px;
+  align-items: center;
+  margin: 200px 0 0;
+}
+
+.dropdown {
+  position: fixed;
+  top: 0;
+  padding-bottom: 30px;
+  z-index: 2;
+  background-color: #24262a;
+  max-height: 600px;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.dropdown.collapse {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #24262a;
+  transform: translateY(-100%);
+}
+
+.dropdown-btn {
+  background-color: #24262a;
+  color: white;
+  font-family: "R6S";
+  border: none;
+  font-size: 32px;
+  position: absolute;
+  bottom: -40px;
+  padding: 15px 10px 0;
+  z-index: -1;
+  left: 120px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 1px solid white;
+}
+.dropdown-btn.right {
+  left: 230px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  padding: 60px 250px;
+  overflow-y: scroll;
+  height: 400px;
   font-size: 0;
   line-height: 0;
-  overflow: visible;
+  position: relative;
+}
+.dropdown input[type="checkbox"] {
+  position: absolute;
+  bottom: 0;
+  left: 3%;
 }
 
 .card {
   font-family: "R6S";
-  opacity: 0.5;
+  opacity: 0.35;
   margin: 5px;
-  width: calc(12.5% - 10px);
   position: relative;
   display: flex;
+  max-width: 250px;
   flex-direction: column;
   color: #24262a;
   background-color: hsla(0, 0%, 100%, 0.15);
-  overflow: hidden;
   transition: all 0.3s ease;
 }
 .card:hover {
   background-color: #2499ff;
   cursor: pointer;
+}
+
+.random-card-container {
+  margin: 0 20px;
+}
+.random-card-container .card span {
+  font-size: 26px;
+}
+.random-card-container .card {
+  margin: 0 0 20px 0;
 }
 .card span {
   text-align: center;
@@ -43,7 +100,7 @@ body {
   display: block;
   padding: 13px 0;
   font-weight: 400;
-  font-size: 1.5vw;
+  font-size: 1.35vw;
 }
 
 .card .op-img {
@@ -78,7 +135,6 @@ input[type="checkbox"] {
   width: 2rem;
   height: 2rem;
   border: 2px solid #455a64;
-  overflow: hidden;
   border-radius: 3px;
   box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.6);
   cursor: pointer;
@@ -110,8 +166,141 @@ input[type="checkbox"]::before {
   */
   background-image: url("data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjQ0OCIgaGVpZ2h0PSI0NDgiIHZpZXdCb3g9IjAgMCA0NDggNDQ4Ij4KPHRpdGxlPjwvdGl0bGU+CjxnIGlkPSJpY29tb29uLWlnbm9yZSI+CjwvZz4KPHBhdGggZD0iTTQxNy43NSAxNDEuNWMwIDYuMjUtMi41IDEyLjUtNyAxN2wtMjE1IDIxNWMtNC41IDQuNS0xMC43NSA3LTE3IDdzLTEyLjUtMi41LTE3LTdsLTEyNC41LTEyNC41Yy00LjUtNC41LTctMTAuNzUtNy0xN3MyLjUtMTIuNSA3LTE3bDM0LTM0YzQuNS00LjUgMTAuNzUtNyAxNy03czEyLjUgMi41IDE3IDdsNzMuNSA3My43NSAxNjQtMTY0LjI1YzQuNS00LjUgMTAuNzUtNyAxNy03czEyLjUgMi41IDE3IDdsMzQgMzRjNC41IDQuNSA3IDEwLjc1IDcgMTd6Ij48L3BhdGg+Cjwvc3ZnPgo=");
 }
+input[type="checkbox"]::after {
+  content: "Set all to active";
+  position: absolute;
+  color: #ffffff;
+  white-space: nowrap;
+  font-family: "R6S";
+  left: 160%;
+  width: fit-content;
+  font-size: 26px;
+}
 
 input[type="checkbox"]:checked::before {
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+.attk-span {
+  display: flex;
+  font-size: 24px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.def-span {
+  display: flex;
+  font-size: 24px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.attk-span::before {
+  content: "";
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path fill='%2324262a' d='M8.32,19.16l-5.54,5.54H2V28h3.31v-0.79l5.54-5.54H8.32V19.16z M25.2,2L10.29,17.18L8.5,15.4l-0.94,0.94l1.87,1.87v2.36h2.36l1.87,1.87l0.94-0.94l-1.78-1.78L28,4.8V2H25.2z M21.68,19.16v2.52h-2.52l5.54,5.54V28H28v-3.31h-0.78L21.68,19.16z M14.6,11.98L4.8,2H2v2.8l9.98,9.8L14.6,11.98z M20.57,18.21l1.87-1.87L21.5,15.4l-1.78,1.78l-1.67-1.71l-2.56,2.56l1.7,1.67L15.4,21.5l0.94,0.94l1.87-1.87h2.36V18.21z'/></svg>");
+}
+.def-span::after {
+  content: "";
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path fill='%2324262a' d='M19.27,9.74l-4.25,2.17L10.73,9.7L8.15,28h13.7L19.27,9.74z M21.23,7.01V2h-2.88v1.73h-1.96V2h-2.78v1.73h-1.96V2H8.77v4.96l6.25,3.51L21.23,7.01z'/></svg>");
+}
+
+.attk-btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 100%;
+  transition: all 0.3s;
+}
+.def-btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.btn {
+  padding: 13px 25px 11px;
+  font-family: "R6S", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #24262a;
+  background: #2499ff;
+  border-bottom: 5px solid #2499ff;
+  border-style: none;
+  position: relative;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  height: 5px;
+  bottom: -5px;
+  background: #00ffe5;
+  transition: all 0.3s;
+  left: 0;
+}
+.btn:hover::before {
+  transform: scaleX(1);
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  transform-origin: center;
+  transform: scaleX(0);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 255, 230, 0.5),
+    rgba(0, 255, 230, 0) 50%
+  );
+  transition: all 0.3s;
+}
+.btn:hover::after {
+  transform: scaleX(1);
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+  .card span {
+    font-size: 1.45vw;
+  }
 }
